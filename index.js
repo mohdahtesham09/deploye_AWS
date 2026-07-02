@@ -5,7 +5,7 @@ dotenv.config();
 const app = express();
 express.json();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 app.get("/health", (req, res)=>{
     return res.status(200).json({message: "Server is healthy"});
